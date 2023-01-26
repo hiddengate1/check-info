@@ -1,12 +1,11 @@
-name: Delete old workflow runs
+name: Clean
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1 * *'
-# Run monthly, at 00:00 on the 1st day of month.
+    - cron: '0 0 * * 0'
 
 jobs:
-  del_runs:
+  del_workflow_runs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs

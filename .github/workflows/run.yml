@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: check-info
-  schedule:
-    - cron: "*/5 * * * *"
+#   schedule:
+#     - cron: "*/5 * * * *"
 
 jobs:
   run-check-info-job:

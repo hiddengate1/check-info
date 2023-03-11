@@ -8,7 +8,7 @@ on:
   repository_dispatch:
     types: check-info
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
 
 jobs:
   run-check-info-job:
